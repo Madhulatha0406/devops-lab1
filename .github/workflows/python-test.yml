@@ -15,5 +15,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run Python Test
-        run: python3 test_calc.py
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run Tests
+        run: pytest
